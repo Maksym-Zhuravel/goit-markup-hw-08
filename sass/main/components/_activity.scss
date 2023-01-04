@@ -1,0 +1,41 @@
+.activity {
+  display: flex;
+  justify-content: space-between;
+
+  &-section {
+    padding-bottom: 94px;
+  }
+
+  &-title {
+    width: 366px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.16;
+  }
+
+  &-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-box-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+
+    color: var(--main-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
