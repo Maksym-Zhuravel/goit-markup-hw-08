@@ -19,7 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header-->
@@ -63,44 +63,46 @@
 
       <div class="mobile-menu" data-menu>
         <div class="container">
-        <button type="button" class="mobile-button-close" data-menu-close>
-          <svg class="mobile-icon-open" width="19" height="19">
-          <use href="./images/icons.svg#mobile-close"></use>
-        </svg>
-        </button>
-        
-        <nav class="mobile-nav">
-        <ul class="mobile-list marker">
-          <li class="mobile-item"><a href="./index.html" class="mobile-link">Студія</a></li>
-          <li class="mobile-item"><a href="./portfolio.html" class="mobile-link">Портфоліо</a></li>
-          <li class="mobile-item"><a href="" class="mobile-link">Контакти</a></li>
-        </ul>
+          <button type="button" class="mobile-button-close" data-menu-close>
+            <svg class="mobile-icon-open" width="19" height="19">
+              <use href="./images/icons.svg#mobile-close"></use>
+            </svg>
+          </button>
+         
+          <div class="mobile-menu-box">
+          <nav class="mobile-nav">
+            <ul class="mobile-list marker">
+              <li class="mobile-item"><a href="./index.html" class="mobile-link">Студія</a></li>
+              <li class="mobile-item">
+                <a href="./portfolio.html" class="mobile-link">Портфоліо</a>
+              </li>
+              <li class="mobile-item"><a href="" class="mobile-link">Контакти</a></li>
+            </ul>
+          </nav>
 
-        <div class="mobile-address">
-          <ul class="mobile-contacts marker">
-          <li class="mobile-contacts-list">
-            <a href="tel:+380961111111" class="mobile-tel-link">
-              +38 096 111 11 11
-            </a>
-          </li>
-          <li class="mobile-contacts-list">
-            <a href="mailto:info@devstudio.com" class="mobile-email-link">
-              info@devstudio.com</a
-            >
-          </li>
-        </ul>
-      </div>
-  
-      <div class="mobile-soc-box">
-        <ul class="mobile-soc-list marker">
-          <li class="mobile-soc-item">Instagram</li>
-          <li class="mobile-soc-item">Twitter</li>
-          <li class="mobile-soc-item">Facebook</li>
-          <li class="mobile-soc-item">LinkedIn</li>
-        </ul>
-      </div>
-      </div>
-  
+          <div class="mobile-address">
+            <ul class="mobile-contacts marker">
+              <li class="mobile-contacts-list">
+                <a href="tel:+380961111111" class="mobile-tel-link"> +38 096 111 11 11 </a>
+              </li>
+              <li class="mobile-contacts-list">
+                <a href="mailto:info@devstudio.com" class="mobile-email-link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="mobile-soc-box">
+            <ul class="mobile-soc-list marker">
+              <li class="mobile-soc-item">Instagram</li>
+              <li class="mobile-soc-item">Twitter</li>
+              <li class="mobile-soc-item">Facebook</li>
+              <li class="mobile-soc-item">LinkedIn</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -396,10 +398,10 @@
     <!-- Footer-->
     <footer class="footer">
       <div class="container">
+      <div class="footer-tablet-box">
         <div class="address">
           <a href="index.html" class="footer-logo"><span class="logo-span">Web</span>Studio</a>
 
-          
           <address class="address-title">
             <ul class="address-list marker">
               <li class="address-item">
@@ -455,10 +457,17 @@
             </li>
           </ul>
         </div>
+      </div>
         <form action="" class="form">
           <label for="sendemail" class="footer-label">Підпишіться на розсилку</label>
           <div class="form-box">
-            <input type="text" name="e-mail" id="sendemail" placeholder="E-mail" class="footer-input" />
+            <input
+              type="text"
+              name="e-mail"
+              id="sendemail"
+              placeholder="E-mail"
+              class="footer-input"
+            />
             <button type="button" class="footer-form-btn">
               Підписатися
               <svg class="footer-soc-icons" width="24" height="24">
@@ -476,26 +485,26 @@
         <form action="" class="modal-form">
           <label for="name" class="modal-label">Ім'я</label>
           <div class="modal-input-box">
-          <input type="text" name="name" id="name" class="modal-input" />
-          <svg width="18" height="18" class="modal-icon">
-            <use href="./images/icons.svg#icon-modal-person"></use>
-          </svg>
+            <input type="text" name="name" id="name" class="modal-input" />
+            <svg width="18" height="18" class="modal-icon">
+              <use href="./images/icons.svg#icon-modal-person"></use>
+            </svg>
           </div>
 
           <label for="tel" class="modal-label">Телефон</label>
           <div class="modal-input-box">
-          <input type="tel" name="tel" id="tel" class="modal-input" />
-          <svg width="18" height="18" class="modal-icon">
-            <use href="./images/icons.svg#icon-modal-phone"></use>
-          </svg>
+            <input type="tel" name="tel" id="tel" class="modal-input" />
+            <svg width="18" height="18" class="modal-icon">
+              <use href="./images/icons.svg#icon-modal-phone"></use>
+            </svg>
           </div>
 
           <label for="email" class="modal-label">Пошта</label>
           <div class="modal-input-box">
-          <input type="email" name="email" id="email" class="modal-input" />
-          <svg width="18" height="18" class="modal-icon">
-            <use href="./images/icons.svg#icon-modal-email"></use>
-          </svg>
+            <input type="email" name="email" id="email" class="modal-input" />
+            <svg width="18" height="18" class="modal-icon">
+              <use href="./images/icons.svg#icon-modal-email"></use>
+            </svg>
           </div>
 
           <label for="comment" class="modal-label">Коментар</label>
@@ -506,13 +515,18 @@
             placeholder="Введіть текст"
           ></textarea>
 
-          <input type="checkbox" id="checkbox" name="checkbox" class="modal-checkbox"/>
+          <input type="checkbox" id="checkbox" name="checkbox" class="modal-checkbox" />
           <label for="checkbox" class="modal-checkbox-label">
-          <span class="modal-checkbox-icon">
-            <svg width="11" height="8">
-              <use href="./images/icons.svg#icon-modal-apply" ></use>
-            </svg>
-          </span> Погоджуюся з розсилкою та приймаю <div class="checkbox-underline"><a href="index.html" target="_blank" class="modal-link">Умови договору</a></div></label>
+            <span class="modal-checkbox-icon">
+              <svg width="11" height="8">
+                <use href="./images/icons.svg#icon-modal-apply"></use>
+              </svg>
+            </span>
+            Погоджуюся з розсилкою та приймаю
+            <div class="checkbox-underline">
+              <a href="index.html" target="_blank" class="modal-link">Умови договору</a>
+            </div></label
+          >
           <button type="submit" class="modal-btn">Відправити</button>
         </form>
 
