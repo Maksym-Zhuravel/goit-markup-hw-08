@@ -8,7 +8,6 @@
   background-color: var(--footer-color);
   text-align: center;
   padding-bottom: 200px;
-  
 
   &-title {
     color: var(--main-color);
@@ -23,6 +22,15 @@
     margin-right: auto;
     margin-bottom: 30px;
     padding-top: 200px;
+
+    @media screen and (min-width: 768px) {
+      width: 60%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 70%;
+      font-size: 44px;
+    }
   }
 
   &-btn {

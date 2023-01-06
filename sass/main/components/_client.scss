@@ -17,6 +17,10 @@
     align-items: center;
     flex-wrap: wrap;
     margin: -15px;
+
+    @media screen and (min-width:1200px) {
+      flex-wrap: nowrap;
+    }
     
   }
   .client-item {

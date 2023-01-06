@@ -16,6 +16,16 @@
   display: flex;
   flex-direction: column;
 
+  @media screen and (min-width:768px) {
+    width: 56%;
+    
+  }
+
+    @media screen and (min-width:1200px) {
+      width: 528px;
+  
+    }
+
   &-title {
     margin-bottom: 20px;
 
