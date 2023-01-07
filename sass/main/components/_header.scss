@@ -127,10 +127,15 @@
   transform: translateY(0%);
   transition: 250ms linear;
 
+  @media screen and (min-width:768px) {
+      display: none;
+    }
+
   & .container {
     display: block;
     height: 100%;
     padding: 0;
+
   }
 
   &.is-hidden {
