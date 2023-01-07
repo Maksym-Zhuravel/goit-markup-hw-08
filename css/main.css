@@ -191,7 +191,6 @@ p {
 }
 
 .mobile-menu {
-  display: none;
   opacity: 1;
   position: fixed;
   width: 100vw;
@@ -563,7 +562,7 @@ p {
 
 .modal {
   position: absolute;
-  width: 95%;
+  width: 450px;
   height: auto;
   padding: 40px;
   top: 50%;
@@ -578,7 +577,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .modal {
-    width: 56%;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
