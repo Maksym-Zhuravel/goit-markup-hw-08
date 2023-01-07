@@ -1137,6 +1137,11 @@ textarea::placeholder {
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .client .client-item {
+    width: calc((100% - 90px) / 3);
+  }
+}
 .client .client-item:focus, .client .client-item:hover .client-link {
   fill: var(--logo-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
