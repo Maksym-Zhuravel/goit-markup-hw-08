@@ -2,6 +2,14 @@
   background-color: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  & .container{
+    
+    @media screen and (min-width: 1199px) {
+        display: flex;
+        align-items: baseline;
+      }
+  }
 }
 
 .footer-tablet-box {
@@ -13,5 +21,7 @@
 
   @media screen and (min-width:1200px) {
     display: flex;
+    align-items: baseline;
   }
 }
+

@@ -1,11 +1,14 @@
 .footer-logo {
     display: flex;
-    justify-content: center;
     margin-bottom: 28px;
-
+    
     color: var(--main-color);
     text-decoration: none;
     font-family: Raleway;
     font-size: 26px;
     line-height: 1.19;
+
+    @media screen and (max-width:1199px) {
+        justify-content: center;
+    }
 }
