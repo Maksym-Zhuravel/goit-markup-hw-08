@@ -858,6 +858,7 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .contacts-link {
     padding: 32px 0px;
+    font-size: 14px;
   }
 }
 .contacts-icon {
