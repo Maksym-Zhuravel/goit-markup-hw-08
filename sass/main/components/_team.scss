@@ -17,16 +17,22 @@
 
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
+
+  @media screen and (min-width:1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+  
+    }
 
   &-list{
     @media screen and (min-width:768px){
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: -30px;
+        margin: -15px;
       }
 
       @media screen and (min-width:1200px) {
@@ -44,7 +50,7 @@
     border-radius: 0px 0px 4px 4px;
  
     @media screen and (min-width:768px) {
-        width: calc((100% - 2 * 45px) / 2);
+        width: calc((100% - 2 * 30px) / 2);
         margin: 15px;
       }
 
