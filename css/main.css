@@ -870,7 +870,12 @@ textarea::placeholder {
   background-position: center;
   background-color: var(--footer-color);
   text-align: center;
-  padding-bottom: 200px;
+  padding: 118px 0;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 .hero-title {
   color: var(--main-color);
@@ -883,7 +888,6 @@ textarea::placeholder {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  padding-top: 200px;
 }
 @media screen and (min-width: 768px) {
   .hero-title {
