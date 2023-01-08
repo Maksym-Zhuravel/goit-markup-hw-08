@@ -13,6 +13,7 @@ body {
 }
 
 img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -180,6 +181,7 @@ p {
 }
 
 .mobile-menu {
+  z-index: 1;
   opacity: 1;
   position: fixed;
   width: 100vw;
@@ -1230,13 +1232,35 @@ textarea::placeholder {
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
-  width: 569px;
-  margin-right: auto;
-  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    justify-content: center;
+  }
 }
 .buttons-list:not(:last-child) {
   margin-right: 8px;
+}
+@media screen and (max-width: 767px) {
+  .buttons-list:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.buttons-box {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .buttons-box {
+    display: flex;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buttons-box {
+    margin-right: 8px;
+  }
 }
 .buttons-link {
   padding: 6px 22px;
@@ -1258,20 +1282,37 @@ textarea::placeholder {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio-section {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding: 94px 0;
+  }
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   gap: 30px;
 }
 
 .portfolio-list {
-  width: 370px;
   padding-bottom: 20px;
   background: var(--main-color);
   outline: 1px solid #eeeeee;
   outline-offset: -1px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-list:hover {
