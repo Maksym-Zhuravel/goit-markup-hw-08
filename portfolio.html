@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,28 +52,86 @@
           </li>
         </ul>
       </div>
+      <button type="button" class="mobile-button-open" data-menu-open>
+        <svg class="mobile-icon-open" width="24" height="16">
+          <use href="./images/icons.svg#mobile-menu"></use>
+        </svg>
+      </button>
+
+      <!-- MOBILE MENU -->
+
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="container">
+          <button type="button" class="mobile-button-close" data-menu-close>
+            <svg class="mobile-icon-open" width="19" height="19">
+              <use href="./images/icons.svg#mobile-close"></use>
+            </svg>
+          </button>
+         
+          <div class="mobile-menu-box">
+          <nav class="mobile-nav">
+            <ul class="mobile-list marker">
+              <li class="mobile-item"><a href="./index.html" class="mobile-link">Студія</a></li>
+              <li class="mobile-item">
+                <a href="./portfolio.html" class="mobile-link current">Портфоліо</a>
+              </li>
+              <li class="mobile-item"><a href="" class="mobile-link">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <div class="mobile-address">
+            <ul class="mobile-contacts marker">
+              <li class="mobile-contacts-list">
+                <a href="tel:+380961111111" class="mobile-tel-link"> +38 096 111 11 11 </a>
+              </li>
+              <li class="mobile-contacts-list">
+                <a href="mailto:info@devstudio.com" class="mobile-email-link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="mobile-soc-box">
+            <ul class="mobile-soc-list marker">
+              <li class="mobile-soc-item">Instagram</li>
+              <li class="mobile-soc-item">Twitter</li>
+              <li class="mobile-soc-item">Facebook</li>
+              <li class="mobile-soc-item">LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!--Main-->
     <main class="main">
-      <section class="section container">
+      <section class="portfolio-section container">
         <h1 class="title-hidden">Наше портфоліо</h1>
-        <ul class="buttons marker">
+        <ul class="buttons container marker">
+          <div class="buttons-box">
           <li class="buttons-list"><button type="button" class="buttons-link">Усі</button></li>
           <li class="buttons-list">
             <button type="button" class="buttons-link">Веб-сайти</button>
           </li>
           <li class="buttons-list"><button type="button" class="buttons-link">Додатки</button></li>
+          </div>
           <li class="buttons-list"><button type="button" class="buttons-link">Дизайн</button></li>
           <li class="buttons-list">
             <button type="button" class="buttons-link">Маркетинг</button>
           </li>
         </ul>
 
-        <ul class="portfolio marker">
+        <ul class="portfolio container marker">
           <li class="portfolio-list">
             <div class="portfolio-overlay">
-              <img src="./images/portfolio-img1.jpg" alt="laptop" width="370" />
+              <picture>
+                        <source srcset="./images/first_desk.jpg 1x, ./images/first_desk2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/first_tab.jpg 1x, ./images/first_tab2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/first_mob.jpg 1x, ./images/first_mob2x.jpg 2x" media="(max-width: 767px)" />
+              <img src="./images/first_mob.jpg" alt="laptop" width="370" />
+              </picture>
               <p class="portfolio-overlay-text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -84,7 +142,12 @@
           </li>
           <li class="portfolio-list">
             <div class="portfolio-overlay">
-            <img src="./images/portfolio-img2.jpg" alt="basketball players" width="370" />
+              <picture>
+                        <source srcset="./images/second_desk.jpg 1x, ./images/second_desk2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/second_tab.jpg 1x, ./images/second_tab2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/second_mob.jpg 1x, ./images/second_mob2x.jpg 2x" media="(max-width: 767px)" />
+            <img src="./images/second_mob.jpg" alt="basketball players" width="370" />
+              </picture>
             <p class="portfolio-overlay-text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -95,7 +158,12 @@
           </li>
           <li class="portfolio-list">
             <div class="portfolio-overlay">
-            <img src="./images/portfolio-img3.jpg" alt="restaurant border" width="370" />
+              <picture>
+                        <source srcset="./images/third_desk.jpg 1x, ./images/third_desk2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/third_tab.jpg 1x, ./images/third_tab2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/third_mob.jpg 1x, ./images/third_mob2x.jpg 2x" media="(max-width: 767px)" />
+            <img src="./images/third_mob.jpg" alt="restaurant border" width="370" />
+              </picture>
             <p class="portfolio-overlay-text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -106,7 +174,12 @@
           </li>
           <li class="portfolio-list">
             <div class="portfolio-overlay">
-            <img src="./images/portfolio-img4.jpg" alt="headphones" width="370" />
+              <picture>
+                        <source srcset="./images/fourth_desk.jpg 1x, ./images/fourth_desk2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/fourth_tab.jpg 1x, ./images/fourth_tab2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/fourth_mob.jpg 1x, ./images/fourth_mob2x.jpg 2x" media="(max-width: 767px)" />
+            <img src="./images/fourth_mob.jpg" alt="headphones" width="370" />
+              </picture>
             <p class="portfolio-overlay-text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -117,7 +190,12 @@
           </li>
           <li class="portfolio-list">
             <div class="portfolio-overlay">
-            <img src="./images/portfolio-img5.jpg" alt="two boxes" width="370" />
+              <picture>
+                        <source srcset="./images/fifth_desk.jpg 1x, ./images/fifth_desk2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/fifth_tab.jpg 1x, ./images/fifth_tab2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/fifth_mob.jpg 1x, ./images/fifth_mob2x.jpg 2x" media="(max-width: 767px)" />
+            <img src="./images/fifth_mob.jpg" alt="two boxes" width="370" />
+              </picture>
             <p class="portfolio-overlay-text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -128,7 +206,12 @@
           </li>
           <li class="portfolio-list">
             <div class="portfolio-overlay">
-            <img src="./images/portfolio-img6.jpg" alt="personal computer" width="370" />
+              <picture>
+                        <source srcset="./images/sixth_desk.jpg 1x, ./images/sixth_desk2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/sixth_tab.jpg 1x, ./images/sixth_tab2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/sixth_mob.jpg 1x, ./images/sixth_mob2x.jpg 2x" media="(max-width: 767px)" />
+            <img src="./images/sixth_mob.jpg" alt="personal computer" width="370" />
+              </picture>
             <p class="portfolio-overlay-text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -139,7 +222,12 @@
           </li>
           <li class="portfolio-list">
             <div class="portfolio-overlay">
-            <img src="./images/portfolio-img7.jpg" alt="magazine" width="370" />
+              <picture>
+                        <source srcset="./images/seventh_desk.jpg 1x, ./images/seventh_desk2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/seventh_tab.jpg 1x, ./images/seventh_tab2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/seventh_mob.jpg 1x, ./images/seventh_mob2x.jpg 2x" media="(max-width: 767px)" />
+            <img src="./images/seventh_mob.jpg" alt="magazine" width="370" />
+              </picture>
             <p class="portfolio-overlay-text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -150,7 +238,12 @@
           </li>
           <li class="portfolio-list">
             <div class="portfolio-overlay">
-            <img src="./images/portfolio-img8.jpg" alt="label" width="370" />
+              <picture>
+                        <source srcset="./images/eighth_desk.jpg 1x, ./images/eighth_desk2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/eighth_tab.jpg 1x, ./images/eighth_tab2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/eighth_mob.jpg 1x, ./images/eighth_mob2x.jpg 2x" media="(max-width: 767px)" />
+            <img src="./images/eighth_mob.jpg" alt="label" width="370" />
+              </picture>
             <p class="portfolio-overlay-text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -161,7 +254,12 @@
           </li>
           <li class="portfolio-list">
             <div class="portfolio-overlay">
-            <img src="./images/portfolio-img9.jpg" alt="web-serfing man" width="370" />
+              <picture>
+                        <source srcset="./images/nineth_desk.jpg 1x, ./images/nineth_desk2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/nineth_tab.jpg 1x, ./images/nineth_tab2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/nineth_mob.jpg 1x, ./images/nineth_mob2x.jpg 2x" media="(max-width: 767px)" />
+            <img src="./images/nineth_mob.jpg" alt="web-serfing man" width="370" />
+              </picture>
             <p class="portfolio-overlay-text">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -178,10 +276,10 @@
     
     <footer class="footer">
       <div class="container">
+      <div class="footer-tablet-box">
         <div class="address">
           <a href="index.html" class="footer-logo"><span class="logo-span">Web</span>Studio</a>
 
-          <!--Contacts-->
           <address class="address-title">
             <ul class="address-list marker">
               <li class="address-item">
@@ -237,10 +335,17 @@
             </li>
           </ul>
         </div>
+      </div>
         <form action="" class="form">
           <label for="sendemail" class="footer-label">Підпишіться на розсилку</label>
           <div class="form-box">
-            <input type="text" name="e-mail" id="sendemail" placeholder="E-mail" class="footer-input" />
+            <input
+              type="text"
+              name="e-mail"
+              id="sendemail"
+              placeholder="E-mail"
+              class="footer-input"
+            />
             <button type="button" class="footer-form-btn">
               Підписатися
               <svg class="footer-soc-icons" width="24" height="24">
@@ -251,5 +356,7 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
